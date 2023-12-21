@@ -28,4 +28,4 @@ jobs:
             - name: Earthly version
               run: earthly --version
             - name: Test all on satellite
-              run: earthly --auto-skip --no-output --strict --sat emaps-ci --org electricitymaps +prepare
+              run: earthly --auto-skip --no-output --strict --sat emaps-ci --org electricitymaps +test
