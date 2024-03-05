@@ -1,0 +1,7 @@
+VERSION 0.8
+FROM ruby:3.1.2
+WORKDIR /projects/api
+
+test:
+    COPY README.md .
+    RUN echo "Installing api..."

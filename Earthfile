@@ -1,7 +1,8 @@
-VERSION --use-visited-upfront-hash-collection 0.7
-FROM python:3.10
+VERSION 0.8
 PROJECT electricitymaps/electricitymaps
 
-test:
-  RUN echo "Start"
-  COPY ./contrib+src-files/* /contrib
+test-all:
+  BUILD --auto-skip ./projects/api+test
+  BUILD --auto-skip ./projects/api-docs+test
+  BUILD --auto-skip ./projects/landing-page+test
+
