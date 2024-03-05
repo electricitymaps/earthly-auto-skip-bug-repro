@@ -4,4 +4,4 @@ WORKDIR /projects/api-docs
 
 test:
     COPY README.md .
-    RUN echo "Installing api-docs..."
+    RUN echo "Installing api-docs v2..."
