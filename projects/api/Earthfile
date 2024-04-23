@@ -1,7 +1,0 @@
-VERSION 0.8
-FROM alpine:3.15
-WORKDIR /projects/api
-
-test:
-    COPY README.md .
-    RUN echo "Installing api..."
