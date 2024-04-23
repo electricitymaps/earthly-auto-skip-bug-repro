@@ -3,5 +3,4 @@ FROM alpine:3.15
 WORKDIR /libs/db
 
 test:
-  RUN echo "all good"
-    # RUN false
+  RUN false
