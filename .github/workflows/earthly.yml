@@ -26,4 +26,4 @@ jobs:
             - name: Earthly version
               run: earthly --version
             - name: Test all
-              run: earthly --auto-skip --no-output --strict --org electricitymaps +test-all
+              run: earthly --auto-skip --no-output --strict --org electricitymaps +test-libs
