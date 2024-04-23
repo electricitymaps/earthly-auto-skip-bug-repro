@@ -1,5 +1,5 @@
 # Runs Earthly targets
-name: Earthly Satellite
+name: Earthly
 on: push
 jobs:
     run-tests:
@@ -12,7 +12,7 @@ jobs:
         steps:
             - uses: earthly/actions-setup@v1
               with:
-                  version: v0.8.4
+                  version: v0.8.7
             - uses: actions/checkout@v2
             - name: Put back the git branch into git (Earthly uses it for tagging)
               run: |
@@ -25,5 +25,5 @@ jobs:
                   git checkout -b "$branch" || true
             - name: Earthly version
               run: earthly --version
-            - name: Test all on satellite
-              run: earthly --auto-skip --no-output --strict --sat electricitymaps-selfhosted-satellite --org electricitymaps +test-all
+            - name: Test all
+              run: earthly --auto-skip --no-output --strict --org electricitymaps +test-all
