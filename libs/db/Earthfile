@@ -3,4 +3,5 @@ FROM alpine:3.15
 WORKDIR /libs/db
 
 test:
+  COPY README.md .
   RUN false
